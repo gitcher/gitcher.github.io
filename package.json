@@ -1,0 +1,60 @@
+{
+  "name": "gitcher.github.io",
+  "version": "1.0.0",
+  "author": "Mikhail Lysikov <d8corp@mail.ru>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitcher/gitcher.github.io.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gitcher/gitcher.github.io/issues"
+  },
+  "homepage": "https://gitcher.github.io",
+  "private": true,
+  "dependencies": {
+    "async-mobx": "^1.0.0",
+    "ajax-mobx": "^1.0.0",
+    "mobx": "^6.0.0",
+    "mobx-react": "^7.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-html-classes": "^1.0.0",
+    "react-mobx-routing": "^1.0.16"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "@testing-library/user-event": "^12.1.6",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.2",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "husky": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "react-scripts": "^3.4.3",
+    "source-map-explorer": "^2.5.0",
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
