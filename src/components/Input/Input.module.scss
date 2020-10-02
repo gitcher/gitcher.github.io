@@ -1,0 +1,60 @@
+.root {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  background: #fff;
+  height: 20px;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 20px 10px 10px;
+}
+.input {
+  order: 2;
+  border: none;
+  background: none;
+  font-size: 14px;
+
+  &[type="date"],
+  &:not([data-value=""]),
+  &:focus {
+    box-shadow: none;
+    outline: none;
+
+    & +.label {
+      bottom: 100%;
+      transform: translateY(0);
+      font-size: 12px;
+      padding: 0 3px 2px;
+    }
+    & ~ .after,
+    & ~ .before {
+      opacity: 1;
+      transition: all 0.3s;
+    }
+  }
+}
+.label {
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  transform: translateY(50%);
+  transition: all 0.1s;
+  cursor: pointer;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.after,
+.before {
+  transition: all 0.1s;
+  opacity: 0;
+  font-size: 14px;
+  line-height: 1em;
+}
+.before {
+  order: 1;
+}
+.after {
+  order: 3;
+}

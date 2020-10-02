@@ -1,9 +1,10 @@
 import React from 'react'
+import LoginForm from 'src/forms/LoginForm'
 
 function App () {
   return (
     <div>
-      Welcome to Gitcher page.
+      <LoginForm />
     </div>
   )
 }
